@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sociedad Digital</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>La Sociedad Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('redes')">Redes</a></li>
+                <li><a href="#" onclick="showSection('software')">Software</a></li>
+                <li><a href="#" onclick="showSection('hardware')">Hardware</a></li>
+                <li><a href="#" onclick="showSection('datos')">Datos</a></li>
+                <li><a href="#" onclick="showSection('sociedad_digital')">Sociedad Digital</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio con botones interactivos -->
+    <section id="inicio" class="section">
+        <div class="hero">
+            <h2>Bienvenidos a La Sociedad Digital</h2>
+            <p>Explora cómo las tecnologías están transformando la forma en que vivimos y trabajamos en un mundo interconectado. Descubre todo lo relacionado con redes, software, hardware y la gestión de datos en la sociedad moderna.</p>
+            <p>En este espacio, aprenderás cómo la tecnología está impactando en cada aspecto de nuestras vidas, desde la educación hasta los negocios, brindando nuevas oportunidades y desafíos.</p>
+            <!-- Botones interactivos -->
+            <div class="button-group">
+                <button class="cta-button" onclick="showContactCard()">Contáctanos</button>
+                <button class="cta-button" onclick="scrollToSection('services')">Nuestros Servicios</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta de presentación con información de contacto -->
+        <div id="contact-card" class="contact-card" style="display:none;">
+            <h3>Contáctanos</h3>
+            <p>Para más información, puedes comunicarte con nosotros a través de WhatsApp:</p>
+            <p><strong>WhatsApp:</strong> +502 3652-2741</p>
+            <button class="close-button" onclick="hideContactCard()">Cerrar</button>
+        </div>
+
+        <!-- Sección de Servicios dentro de Inicio -->
+        <div id="services" class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="content-group">
+                <h3>Redes</h3>
+                <p>Ofrecemos soluciones integrales para redes, ayudando a empresas a mantenerse conectadas de manera segura y eficiente. Desde redes de área local (LAN) hasta soluciones de conectividad global, optimizamos la infraestructura de comunicación para mejorar la productividad.</p>
+            </div>
+            <div class="content-group">
+                <h3>Software</h3>
+                <p>Desarrollamos software personalizado para satisfacer las necesidades únicas de tu negocio, desde aplicaciones empresariales hasta plataformas en la nube. Nuestro objetivo es hacer que tu tecnología trabaje para ti.</p>
+            </div>
+            <div class="content-group">
+                <h3>Hardware</h3>
+                <p>Proporcionamos consultoría en hardware, seleccionando los mejores equipos para maximizar el rendimiento de tus sistemas informáticos. Desde servidores hasta estaciones de trabajo, aseguramos que tu hardware esté alineado con tus objetivos tecnológicos.</p>
+            </div>
+            <div class="content-group">
+                <h3>Datos</h3>
+                <p>Ayudamos a gestionar y analizar grandes volúmenes de datos, transformando información en conocimientos útiles que te permitirán tomar decisiones estratégicas basadas en hechos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Redes -->
+    <section id="redes" class="section" style="display:none;">
+        <h2>Redes</h2>
+        <div class="content-group">
+            <h3>¿Qué son las redes?</h3>
+            <p>Las redes permiten conectar dispositivos entre sí, facilitando la comunicación fluida entre ellos. Las más comunes incluyen las redes de área local (LAN), que vemos en hogares y oficinas. También existen redes más amplias, como las redes de área amplia (WAN), que conectan dispositivos a gran escala, como en corporaciones globales.</p>
+        </div>
+        <div class="content-group">
+            <h3>¿Cómo funcionan?</h3>
+            <p>Las redes utilizan protocolos de comunicación, como TCP/IP, para que los datos puedan ser enviados y recibidos. Esto implica procesos complejos, pero en esencia, es como una carretera por la que viajan los datos. Cada dispositivo en una red tiene una dirección única, llamada IP, que permite que la información llegue al destino correcto.</p>
+        </div>
+        <div class="content-group">
+            <h3>¿Por qué son importantes?</h3>
+            <p>Las redes han revolucionado la forma en que trabajamos y nos comunicamos. Gracias a ellas, las empresas pueden colaborar a nivel mundial, las personas pueden mantenerse conectadas desde cualquier parte, y los datos pueden fluir rápidamente entre sistemas, mejorando la productividad y la eficiencia.</p>
+        </div>
+    </section>
+
+    <!-- Sección Software -->
+    <section id="software" class="section" style="display:none;">
+        <h2>Software</h2>
+        <div class="content-group">
+            <h3>Definición de Software</h3>
+            <p>El software es el conjunto de instrucciones que permiten a un dispositivo realizar tareas específicas. Desde aplicaciones sencillas como las calculadoras hasta complejos sistemas operativos como Windows o Linux, el software permite que interactuemos con la tecnología de manera eficiente.</p>
+        </div>
+        <div class="content-group">
+            <h3>Tipos de Software</h3>
+            <p>Existen dos grandes tipos: el software de sistema, que incluye los sistemas operativos que gestionan los recursos de hardware, y el software de aplicación, que son programas diseñados para realizar tareas específicas como procesadores de texto o aplicaciones de diseño.</p>
+        </div>
+        <div class="content-group">
+            <h3>El futuro del Software</h3>
+            <p>El software está en constante evolución. Desde la inteligencia artificial hasta el desarrollo de aplicaciones en la nube, el futuro del software promete ser aún más innovador, brindando nuevas oportunidades en todos los sectores, desde la educación hasta los negocios.</p>
+        </div>
+    </section>
+
+    <!-- Sección Hardware -->
+    <section id="hardware" class="section" style="display:none;">
+        <h2>Hardware</h2>
+        <div class="content-group">
+            <h3>¿Qué es el Hardware?</h3>
+            <p>El hardware es todo componente físico de una computadora. Estos incluyen el procesador, la memoria RAM, el disco duro y otros periféricos como el monitor y el teclado. Sin hardware, el software no podría funcionar, ya que es la base sobre la cual se ejecuta.</p>
+        </div>
+        <div class="content-group">
+            <h3>Evolución del Hardware</h3>
+            <p>A lo largo del tiempo, el hardware ha mejorado significativamente. Hemos pasado de computadoras gigantes que ocupaban salas enteras a dispositivos portátiles que caben en nuestros bolsillos. Esta evolución ha permitido que el acceso a la tecnología sea cada vez más común.</p>
+        </div>
+        <div class="content-group">
+            <h3>Hardware en el futuro</h3>
+            <p>Con avances en la miniaturización y la potencia, el hardware continúa superando barreras. Procesadores más rápidos, almacenamiento más eficiente y la integración de tecnologías como la computación cuántica y los dispositivos "wearables" cambiarán la forma en que interactuamos con la tecnología.</p>
+        </div>
+    </section>
+
+    <!-- Sección Datos -->
+    <section id="datos" class="section" style="display:none;">
+        <h2>Datos</h2>
+        <div class="content-group">
+            <h3>¿Qué son los Datos?</h3>
+            <p>Los datos son la base de toda información digital. Desde números hasta textos, imágenes y más, los datos son el elemento crudo que, una vez procesado, genera conocimiento útil para empresas, gobiernos y usuarios en general.</p>
+        </div>
+        <div class="content-group">
+            <h3>El valor de los Datos</h3>
+            <p>Hoy en día, los datos son considerados uno de los recursos más valiosos. A través del análisis de grandes cantidades de datos (big data), las organizaciones pueden tomar decisiones informadas, mejorar la eficiencia y descubrir oportunidades que antes no eran visibles.</p>
+        </div>
+        <div class="content-group">
+            <h3>Protección de los Datos</h3>
+            <p>En una era digital, proteger los datos es crucial. Las leyes de privacidad, como el GDPR en Europa, han surgido para asegurar que la información personal de los usuarios sea tratada con cuidado. La ciberseguridad también juega un papel importante para prevenir el robo o mal uso de los datos.</p>
+        </div>
+    </section>
+
+    <!-- Sección Sociedad Digital -->
+    <section id="sociedad_digital" class="section" style="display:none;">
+        <h2>Sociedad Digital</h2>
+        <div class="content-group">
+            <h3>Transformación Digital</h3>
+            <p>La Sociedad Digital es el resultado de la evolución tecnológica. Hoy en día, la mayor parte de nuestras interacciones, desde la comunicación hasta las transacciones financieras, se realizan a través de plataformas digitales, lo que ha cambiado radicalmente nuestras vidas.</p>
+        </div>
+        <div class="content-group">
+            <h3>Impacto en la Economía</h3>
+            <p>La transformación digital ha impulsado el crecimiento económico global, creando nuevas industrias y oportunidades de trabajo. Las plataformas de comercio electrónico, las fintech y los servicios en la nube son ejemplos de cómo la digitalización ha revolucionado la economía mundial.</p>
+        </div>
+        <div class="content-group">
+            <h3>El futuro de la Sociedad Digital</h3>
+            <p>Con la llegada de tecnologías emergentes como la inteligencia artificial, el Internet de las Cosas (IoT) y la realidad aumentada, la sociedad digital seguirá evolucionando, ofreciendo más servicios, conectividad y accesibilidad para todos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Creado por Sebastián Bauer y Sebastian Ramirez</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Muestra la sección seleccionada
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function showContactCard() {
+            document.getElementById('contact-card').style.display = 'block';
+        }
+
+        function hideContactCard() {
+            document.getElementById('contact-card').style.display = 'none';
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mostrar la sección de inicio al cargar la página
+        window.onload = function() {
+            showSection('inicio');
+        };
+    </script>
+</body>
+</html>
